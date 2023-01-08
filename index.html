@@ -10,53 +10,98 @@
   </head>
   <body>
     <div class="container">
-      <div class="logo"><div class="imageText"><img class="logoImage" src="images/odin-lined.png"><p class="logoText">Odin</p></div></div>
+      <div class="logo">
+        <div class="imageText">
+          <img class="logoImage" src="images/odin-lined.png" />
+          <p class="logoText">Odin</p>
+        </div>
+        <p class="credit">
+          Photo by <a href>Hale West</a> on
+          <a href="https://unsplash.com/photos/25xggax4bSA">Unsplash</a>
+        </p>
+      </div>
       <div class="main">
         <div class="headerInfo">
           <p class="notice">
-            This is not a real online service! You know you need something like
-            this in your life to help you realize your deepest <br> Sign up
-            <i>now</i> to get started. <br> <br> You <i>know</i> you want to.
+            This is not a real online service! You know you need something<br />like
+            this in your life to help you realize your deepest <br />
+            Sign up <i>now</i> to get started. <br />
+            <br />
+            You <i>know</i> you want to.
           </p>
         </div>
 
         <div class="containerInputs">
-          <form action="" method="post">
+          <form action="form">
             <div class="userInputs">
-              <p>Let's do this!</p>
+              <p class="slogan">Let's do this!</p>
               <div class="group">
-                  <div class="form-row">
-                    <label for="firstName">First name</label
-                    ><input type="text" id="firstName" name="userFirstName" />
-                  </div>
-                  <div class="form-row">
-                    <label for="lastName">LastName</label
-                    ><input type="text" id="lastName" name="userFirstName" />
-                  </div>
+                <div class="form-row">
+                  <label for="firstName">First name</label
+                  ><input
+                    type="text"
+                    id="firstName"
+                    name="userFirstName"
+                    required
+                    pattern="^[^\d]+$"
+                  />
+                </div>
+                <div class="form-row">
+                  <label for="lastName">LastName</label
+                  ><input
+                    type="text"
+                    id="lastName"
+                    name="userFirstName"
+                    required
+                    pattern="^[^\d]+$"
+                  />
+                </div>
               </div>
               <div class="group">
-                  <div class="form-row">
-                    <label for="email">Email</label
-                    ><input type="email" id="email" name="userEmail" />
-                  </div>
-                  <div class="form-row">
-                    <label for="phoneNumber">Phone Number</label
-                    ><input type="tel" id="phoneNumber" name="userPhoneNumber" />
-                  </div>
+                <div class="form-row">
+                  <label for="email">Email</label
+                  ><input type="email" id="email" name="userEmail" required />
+                </div>
+                <div class="form-row">
+                  <label for="phoneNumber">Phone Number</label
+                  ><input type="tel" id="phoneNumber" name="userPhoneNumber" 
+                  pattern="^\(?([0-9]{3})\)?[-.●]?([0-9]{3})[-.●]?([0-9]{4})$"/>
+                </div>
               </div>
               <div class="group">
-                  <div class="form-row">
-                    <label for="password">Password</label
-                    ><input type="text" id="password" name="userPassword" />
-                  </div>
-                  <div class="form-row">
-                    <label for="passwordConfirm">Confirm Password</label
-                    ><input type="text" id="passwordConfirm" name="userEmail" />
-                  </div>
+                <div class="form-row">
+                  <label for="password">Password</label
+                  ><input
+                    class="error"
+                    type="text"
+                    id="password"
+                    name="userPassword"
+                    title="Must contain at least one uppercase letter, one lowercase letter, and be between 8 and 32 characters long."
+                    required
+                    pattern="(?=^.{8,32}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                  />
+                </div>
+                <div class="form-row">
+                  <label for="passwordConfirm">Confirm Password</label
+                  ><input
+                    class="error"
+                    type="text"
+                    id="passwordConfirm"
+                    name="userPasswordConfirm"
+                    title="Must contain at least one uppercase letter, one lowercase letter, and be between 8 and 32 characters long."
+                    required
+                    pattern="(?=^.{8,32}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                  />
+                </div>
               </div>
             </div>
             <div class="createAccount">
-              <button type="button">Create Account</button>
+              <button class="button" type="submit">
+                <span>Create Account</span>
+              </button>
+              <div class="logIn">
+                Already have an account? <span>Log in</span>
+              </div>
             </div>
           </form>
         </div>
