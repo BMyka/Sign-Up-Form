@@ -2,6 +2,4 @@ I am working on a project as part of The Odin Project curriculum that requires m
 
 # Sign-Up-Form
 
-<iframe src="https://glitch.com/embed/#!/embed/Sign-Up-Form?path=index.html&previewSize=100"
-  style="height:500px; width:100%; border:0;">
-</iframe>
+### [Live Demo](https://bmyka.github.io/Sign-Up-Form/) | [LinkedIn](https://www.linkedin.com/in/biramykolas/)
