@@ -32,7 +32,7 @@
         </div>
 
         <div class="containerInputs">
-          <form action="form">
+          <form>
             <div class="userInputs">
               <p class="slogan">Let's do this!</p>
               <div class="group">
@@ -44,6 +44,7 @@
                     name="userFirstName"
                     required
                     pattern="^[^\d]+$"
+                    placeholder="ex: Odin"
                   />
                 </div>
                 <div class="form-row">
@@ -54,18 +55,20 @@
                     name="userFirstName"
                     required
                     pattern="^[^\d]+$"
+                    placeholder="ex: Borson"
                   />
                 </div>
               </div>
               <div class="group">
                 <div class="form-row">
                   <label for="email">Email</label
-                  ><input type="email" id="email" name="userEmail" required />
+                  ><input type="email" id="email" name="userEmail" required placeholder="ex: odinborson@gmail.com"/>
                 </div>
                 <div class="form-row">
                   <label for="phoneNumber">Phone Number</label
                   ><input type="tel" id="phoneNumber" name="userPhoneNumber" 
-                  pattern="^\(?([0-9]{3})\)?[-.●]?([0-9]{3})[-.●]?([0-9]{4})$"/>
+                  pattern="^\(?([0-9]{3})\)?[-.●]?([0-9]{3})[-.●]?([0-9]{4})$"
+                  placeholder="ex: 202-555-0125"/>
                 </div>
               </div>
               <div class="group">
@@ -79,6 +82,7 @@
                     title="Must contain at least one uppercase letter, one lowercase letter, and be between 8 and 32 characters long."
                     required
                     pattern="(?=^.{8,32}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                    placeholder="Contains uppercase, lowercase, 8-32ch"
                   />
                 </div>
                 <div class="form-row">
@@ -91,6 +95,7 @@
                     title="Must contain at least one uppercase letter, one lowercase letter, and be between 8 and 32 characters long."
                     required
                     pattern="(?=^.{8,32}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                    placeholder="Match the password"
                   />
                 </div>
               </div>
