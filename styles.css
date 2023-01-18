@@ -23,7 +23,7 @@ body {
     background-position: 50% 50%;
     z-index: -1;
     
-    background-image: url(../images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-image: url(./images/leaf.jpg);
 }
 .imageText{
     display: flex;
@@ -201,7 +201,7 @@ p {
   }
   .form-row input:focus:valid
   {
-    transition: 0.5s;
+    transition: 0.3s;
     outline-color: #8BC34A;
     background-color: transparent;
 
